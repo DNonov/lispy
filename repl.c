@@ -3,6 +3,7 @@
 
 /* Windows compile target */
 #ifdef _WIN32
+
 #include <string.h>
 
 static char input[2048];
@@ -23,8 +24,10 @@ void add_history(char* unused) {}
 
 /* Linux and Mac complie target */
 #else
+
 #include <editline/readline.h>
 #include <editline/history.h>
+
 #endif
 
 int main(int argc, char** argv)
